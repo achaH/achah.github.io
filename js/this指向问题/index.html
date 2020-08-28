@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Acha | This指向问题 </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Call me Acha">
+    
+    <link rel="stylesheet" href="https://achah.github.io/css/style.min.5be3a155aa89a24586c761b1b5538c4040e3735ee32ac12a708dc1696c0982f5.css" integrity="sha256-W&#43;OhVaqJokWGx2GxtVOMQEDjc17jKsEqcI3BaWwJgvU=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="https://achah.github.io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://achah.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://achah.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://achah.github.io/favicon-16x16.png">
+    <link rel="canonical" href="https://achah.github.io/js/this%E6%8C%87%E5%90%91%E9%97%AE%E9%A2%98/">
+    
+    
+    <script type="text/javascript" src="https://achah.github.io/js/anatole-header.min.7e2fc0724240b28c6e214687e73a4a6eb6c196bbace546b9dc86e94cca120b5c.js" integrity="sha256-fi/AckJAsoxuIUaH5zpKbrbBlrus5Ua53IbpTMoSC1w=" crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="This指向问题"/>
+<meta name="twitter:description" content="this指向问题以及如何改变 指向问题  一般函数中this指向window。 对象中函数的this指向，他的this是调用该函数的实例对象 构造函数里的this，指向创建出来的实例 事件处理函数中，他的this指向触发事件的元素 箭头函数没有自己的this，它的this指向上下文中的this，即所处环境的this  函数名(); ==&gt; 属于函数调用模式，函数内的this指向window new Person(); ==&gt; 构造函数中的this指向了新创建的实例对象 方法调用模式 （对象中的函数称之为方法）==&gt; obj."/>
+
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://achah.github.io/images/profile.jpg" alt="profile picture">
+        <h3 title=""><a href="/">I&#39;m Acha</a></h3>
+        <div class="description">
+          <p>Call me Acha</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+        <li>
+        <a href="https://de.linkedin.com/" rel="me" aria-label="Linkedin">
+          <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://github.com/lxndrblz/anatole/" rel="me" aria-label="GitHub">
+          <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+          <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="mailto:mail@alexbilz.com" rel="me" aria-label="e-mail">
+          <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Acha 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    <ul class="nav" id="navMenu">
+        
+        
+        
+        <li><a  href="/"  title="">Home</a></li>
+        
+        
+        <li><a  href="/post/"  title="">Posts</a></li>
+        
+        
+        <li><a  href="/js/"  title="">Js</a></li>
+        
+        
+        <li><a  href="/vue/"  title="">Vue</a></li>
+        
+        
+        <li class="theme-switch-item">
+        <a class="theme-switch" title="Switch Theme">
+            <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+        </li>
+    </ul>
+</div>
+
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>This指向问题
+        </h3>
+        
+        </div>
+
+    <h1 id="this指向问题以及如何改变">this指向问题以及如何改变</h1>
+<h2 id="指向问题">指向问题</h2>
+<ol>
+<li><strong>一般函数中this指向window。</strong></li>
+<li><strong>对象中函数的this指向，他的this是调用该函数的实例对象</strong></li>
+<li><strong>构造函数里的this，指向创建出来的实例</strong></li>
+<li><strong>事件处理函数中，他的this指向触发事件的元素</strong></li>
+<li><strong>箭头函数没有自己的this，它的this指向上下文中的this，即所处环境的this</strong></li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">   <span style="color:#a6e22e">函数名</span>();  <span style="color:#f92672">==&gt;</span>  <span style="color:#a6e22e">属于函数调用模式</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">函数内的this指向window</span>
+   <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person</span>(); <span style="color:#f92672">==&gt;</span> <span style="color:#a6e22e">构造函数中的this指向了新创建的实例对象</span>
+   <span style="color:#a6e22e">方法调用模式</span> <span style="color:#960050;background-color:#1e0010">（</span><span style="color:#a6e22e">对象中的函数称之为方法</span><span style="color:#960050;background-color:#1e0010">）</span><span style="color:#f92672">==&gt;</span> <span style="color:#a6e22e">obj</span>.<span style="color:#a6e22e">sayHi</span>()  <span style="color:#f92672">==&gt;</span> <span style="color:#a6e22e">对象</span>.<span style="color:#a6e22e">方法名</span>() <span style="color:#f92672">==&gt;</span> <span style="color:#a6e22e">方法内的this指向了调用方法的哪个对象</span>(<span style="color:#a6e22e">谁调用指向谁</span>)
+   <span style="color:#a6e22e">上下文调用</span> <span style="color:#f92672">==&gt;</span> <span style="color:#a6e22e">可以修改ithis的指向</span>
+</code></pre></div><h2 id="修改指向">修改指向</h2>
+<p>使用call、apply、bind方法</p>
+<p>这三个方法存在于Function.prototype(原型对象)</p>
+<p><code>函数</code>都可以使用这三个方法实现修改this的指向</p>
+<blockquote>
+<p>call()</p>
+</blockquote>
+<p>调用函数可以使用()来调用，除此之外，还可以使用call方法来调用函数</p>
+<pre><code>   函数名().call(this指向)
+</code></pre><p>call的第一个参数就是用来修改函数的this指向的</p>
+<p>除此之外，其他所有的参数都是用来给函数传递实参的</p>
+<p>如果call的第一个参数是null或者undefined，或则和不写函数内的this指向window。</p>
+<blockquote>
+<p>apply()</p>
+</blockquote>
+<p>call  和 apply() 的作用</p>
+<p>​	1.调用函数</p>
+<p>​	2.第一个参数修改this指向</p>
+<p>​	3.还可以给函数传递实参</p>
+<p>call(修改this指向，参数1，参数2，&hellip;&hellip;)</p>
+<p>apply(修改this指向，[参数1，参数2，&hellip;&hellip;])</p>
+<p>​	apply具有平铺性，数组中的每一项取出来给函数传递实参</p>
+<blockquote>
+<p>bind</p>
+</blockquote>
+<p>语法：var  fn2  =  fn.bind(thisArg);</p>
+<p>作用：创建并返回函数，新函数和fn函数长得一样，新函数的this指向bind的thisArg函数</p>
+<blockquote>
+<p>总结：</p>
+</blockquote>
+<p>call  和  apply 作用一样</p>
+<p>​	1.能调用函数</p>
+<p>​	2.第一个参数能修改this指向</p>
+<p>​	3.给函数传递实参</p>
+<p>bind 是创建并返回新函数，不调用函数</p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
+      </div>
+    </div>
+
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+<script type="text/javascript" src="https://achah.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js" integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw=" crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript" src="https://achah.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js" integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://achah.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js" integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro=" crossorigin="anonymous"></script></html></body>
+
+</html>

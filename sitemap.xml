@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://achah.github.io/js/</loc>
+    <lastmod>2020-08-28T17:11:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://achah.github.io/js/this%E6%8C%87%E5%90%91%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2020-08-28T17:11:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://achah.github.io/</loc>
+    <lastmod>2020-08-28T17:11:12+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://achah.github.io/vue/vue-cli%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2020-08-28T15:57:13+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://achah.github.io/vue/</loc>
-    <lastmod>2020-08-28T15:57:13+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://achah.github.io/</loc>
     <lastmod>2020-08-28T15:57:13+08:00</lastmod>
   </url>
   
