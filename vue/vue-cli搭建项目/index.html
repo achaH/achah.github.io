@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Acha | Vue Cli搭建项目 </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Call me Acha">
+    
+    <link rel="stylesheet" href="https://achah.github.io/css/style.min.5be3a155aa89a24586c761b1b5538c4040e3735ee32ac12a708dc1696c0982f5.css" integrity="sha256-W&#43;OhVaqJokWGx2GxtVOMQEDjc17jKsEqcI3BaWwJgvU=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="https://achah.github.io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://achah.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://achah.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://achah.github.io/favicon-16x16.png">
+    <link rel="canonical" href="https://achah.github.io/vue/vue-cli%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE/">
+    
+    
+    <script type="text/javascript" src="https://achah.github.io/js/anatole-header.min.7e2fc0724240b28c6e214687e73a4a6eb6c196bbace546b9dc86e94cca120b5c.js" integrity="sha256-fi/AckJAsoxuIUaH5zpKbrbBlrus5Ua53IbpTMoSC1w=" crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vue Cli搭建项目"/>
+<meta name="twitter:description" content="通过vue-cli搭建项目  在需要创建的文件夹下，按住shift键右击打开Powershell窗口 输入指令创建项目（project)  vue create project  使用git管理项目  git init git add ."/>
+
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://achah.github.io/images/profile.jpg" alt="profile picture">
+        <h3 title=""><a href="/">I&#39;m Acha</a></h3>
+        <div class="description">
+          <p>Call me Acha</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+        <li>
+        <a href="https://de.linkedin.com/" rel="me" aria-label="Linkedin">
+          <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://github.com/lxndrblz/anatole/" rel="me" aria-label="GitHub">
+          <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+          <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="mailto:mail@alexbilz.com" rel="me" aria-label="e-mail">
+          <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Acha 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    <ul class="nav" id="navMenu">
+        
+        
+        
+        <li><a  href="/"  title="">Home</a></li>
+        
+        
+        <li><a  href="/post/"  title="">Posts</a></li>
+        
+        
+        <li><a  href="/about/"  title="">About</a></li>
+        
+        
+        <li><a  href="/vue/"  title="">Vue</a></li>
+        
+        
+        <li class="theme-switch-item">
+        <a class="theme-switch" title="Switch Theme">
+            <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+        </li>
+    </ul>
+</div>
+
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>Vue Cli搭建项目
+        </h3>
+        
+        </div>
+
+    <h1 id="通过vue-cli搭建项目">通过vue-cli搭建项目</h1>
+<ul>
+<li>在需要创建的文件夹下，按住shift键右击打开Powershell窗口</li>
+<li>输入指令创建项目（project)</li>
+</ul>
+<pre><code>vue create project  
+</code></pre><ul>
+<li>使用git管理项目</li>
+</ul>
+<pre><code>git init
+git add .
+git commit -m '初始化项目'
+</code></pre><ul>
+<li>登录github创建一个空的远程仓库</li>
+<li>给仓库设置别名，并将本地代码推送到远程仓库</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">git</span> <span style="color:#a6e22e">remote</span> <span style="color:#a6e22e">add</span> <span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">git</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">github</span>.<span style="color:#a6e22e">com</span><span style="color:#f92672">:</span><span style="color:#a6e22e">AchaH</span><span style="color:#f92672">/</span><span style="color:#a6e22e">project</span>.<span style="color:#a6e22e">git</span>
+<span style="color:#a6e22e">git</span> <span style="color:#a6e22e">push</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">u</span> <span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">master</span>
+</code></pre></div><ul>
+<li>
+<p>清理脚手架默认生成的内容</p>
+<ul>
+<li>清理APP.vue</li>
+<li>修改<code>router/index.js</code></li>
+<li>把<code>views</code> <code>components</code> <code>assets</code>文件夹都清空</li>
+</ul>
+</li>
+<li>
+<p>通用样式的处理</p>
+<ul>
+<li>新建<code>styles</code>文件夹创建新的文件<code>base.less</code></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">*</span> {
+  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
+  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">0</span>;
+  <span style="color:#66d9ef">list-style</span>: <span style="color:#66d9ef">none</span>;
+  <span style="color:#66d9ef">box-sizing</span>: <span style="color:#66d9ef">border-box</span>;
+}
+</code></pre></div><ul>
+<li>如果有icon图标，引入<code>iconfont.css</code></li>
+<li>在main.js导入这两个样式文件</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// 导入通用的样式
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;./styles/base.less&#39;</span>
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;./styles/iconfont.css&#39;</span>
+</code></pre></div></li>
+<li>
+<p>引入vant组件库</p>
+<ul>
+<li>安装vant-ui</li>
+</ul>
+<pre><code>yarn add vant
+</code></pre><ul>
+<li>全局导入(方便)</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Vant</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vant&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;vant/lib/index.css&#39;</span>;
+  
+<span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">Vant</span>);
+</code></pre></div><ul>
+<li>按需加载(性能高)</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ae81ff">1.</span> <span style="color:#a6e22e">安装插件</span>
+<span style="color:#a6e22e">npm</span> <span style="color:#a6e22e">i</span> <span style="color:#a6e22e">babel</span><span style="color:#f92672">-</span><span style="color:#a6e22e">plugin</span><span style="color:#f92672">-</span><span style="color:#66d9ef">import</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">D</span>
+  
+<span style="color:#ae81ff">2.</span> <span style="color:#a6e22e">在babel</span>.<span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">js中</span>
+{
+  <span style="color:#e6db74">&#34;plugins&#34;</span><span style="color:#f92672">:</span> [
+    [<span style="color:#e6db74">&#34;import&#34;</span>, {
+      <span style="color:#e6db74">&#34;libraryName&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;vant&#34;</span>,
+      <span style="color:#e6db74">&#34;libraryDirectory&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;es&#34;</span>,
+      <span style="color:#e6db74">&#34;style&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+    }]
+  ]
+}
+  
+<span style="color:#ae81ff">3.</span> <span style="color:#a6e22e">在main</span>.<span style="color:#a6e22e">js中导入某个组件</span>
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Vue</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vue&#39;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Button</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;vant&#39;</span>;
+  
+<span style="color:#a6e22e">Vue</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">Button</span>);
+</code></pre></div></li>
+<li>
+<p>配置项目中的rem</p>
+<p><strong>amfe-flexible库</strong></p>
+<ul>
+<li>安装</li>
+</ul>
+<pre><code>yarn add amfe-flexible
+</code></pre><ul>
+<li>在<code>main.js</code>中引入</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;amfe-flexible&#39;</span>
+</code></pre></div><ul>
+<li>效果</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">html的fontSize会被设置为屏幕宽度的 1/10
+</code></pre></div><p><strong>postcss-pxtorem</strong></p>
+<ul>
+<li>安装依赖包</li>
+</ul>
+<pre><code>yarn add postcss-pxtorem -D
+</code></pre><ul>
+<li>提供postcss的配置文件<code>postcss.config.js</code></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+  <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> {
+    <span style="color:#75715e">// autoprefixer: {
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">//   browsers: [&#39;Android &gt;= 4.0&#39;, &#39;iOS &gt;= 8&#39;]
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// },
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;postcss-pxtorem&#39;</span><span style="color:#f92672">:</span> {
+      <span style="color:#75715e">// 1rem的大小
+</span><span style="color:#75715e"></span>      <span style="color:#75715e">// 1rem大小需要设置为37.5  并且量出来的大小也要 /2
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">rootValue</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">37.5</span>,
+      <span style="color:#75715e">// 把哪些属性的px转成rem
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">propList</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;*&#39;</span>]
+    }
+  }
+}
+</code></pre></div></li>
+</ul>
+<p>至此，基本配置完成，可以开始写项目</p>
+<h1 id="关于配置eslint和prettier">关于配置eslint和prettier</h1>
+<blockquote>
+<p>确保代码规范</p>
+</blockquote>
+<p>eslint仅仅对js进行格式化和校验，不会格式化html和css</p>
+<ul>
+<li>
+<p>安装eslint插件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"> <span style="color:#a6e22e">在setting</span>.<span style="color:#a6e22e">json中配置</span>
+ <span style="color:#75715e">// 当保存的时候，eslint自动帮我们修复错误
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#34;editor.codeActionsOnSave&#34;</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#34;source.fixAll&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+  },
+</code></pre></div></li>
+<li>
+<p><code>prettier</code>插件 格式化代码（html/js/css/json)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#ae81ff">1.</span> <span style="color:#a6e22e">安装prettier插件</span>
+  
+<span style="color:#ae81ff">2.</span> <span style="color:#a6e22e">再settings</span>.<span style="color:#a6e22e">json文件中增加一个配置</span>
+<span style="color:#e6db74">&#34;editor.formatOnSave&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+</code></pre></div></li>
+<li>
+<p>解决eslint和prettier冲突问题</p>
+<ul>
+<li>在项目中提供 prettier的配置文件<code>.prettierrc</code></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+  <span style="color:#e6db74">&#34;semi&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+  <span style="color:#e6db74">&#34;singleQuote&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
+}
+  
+</code></pre></div><ul>
+<li>如何修改eslint的规范, 在<code>.eslintrc</code>配置文件中修改eslint的配置</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">  <span style="color:#a6e22e">rules</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;no-console&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">NODE_ENV</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;production&#39;</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;warn&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;off&#39;</span>,
+    <span style="color:#e6db74">&#39;no-debugger&#39;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">NODE_ENV</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;production&#39;</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#39;warn&#39;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;off&#39;</span>,
+    <span style="color:#75715e">// key: 规则的名字   off: 关闭这条规则
+</span><span style="color:#75715e"></span>    <span style="color:#e6db74">&#39;space-before-function-paren&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;error&#39;</span>, <span style="color:#e6db74">&#39;never&#39;</span>]
+  }
+</code></pre></div></li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
+      </div>
+    </div>
+
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+<script type="text/javascript" src="https://achah.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js" integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw=" crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript" src="https://achah.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js" integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://achah.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js" integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro=" crossorigin="anonymous"></script></html></body>
+
+</html>
