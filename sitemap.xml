@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://achah.github.io/post/</loc>
-    <lastmod>2020-09-21T21:55:44+08:00</lastmod>
+    <loc>https://achah.github.io/node/</loc>
+    <lastmod>2020-09-21T22:04:58+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://achah.github.io/</loc>
+    <lastmod>2020-09-21T22:04:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://achah.github.io/node/%E5%85%B3%E4%BA%8Enode/</loc>
+    <lastmod>2020-09-21T22:04:58+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://achah.github.io/post/</loc>
     <lastmod>2020-09-21T21:55:44+08:00</lastmod>
   </url>
   

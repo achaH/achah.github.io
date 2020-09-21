@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Acha | 关于node </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Call me Acha">
+    
+    <link rel="stylesheet" href="https://achah.github.io/css/style.min.5be3a155aa89a24586c761b1b5538c4040e3735ee32ac12a708dc1696c0982f5.css" integrity="sha256-W&#43;OhVaqJokWGx2GxtVOMQEDjc17jKsEqcI3BaWwJgvU=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="https://achah.github.io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://achah.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://achah.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://achah.github.io/favicon-16x16.png">
+    <link rel="canonical" href="https://achah.github.io/node/%E5%85%B3%E4%BA%8Enode/">
+    
+    
+    <script type="text/javascript" src="https://achah.github.io/js/anatole-header.min.7e2fc0724240b28c6e214687e73a4a6eb6c196bbace546b9dc86e94cca120b5c.js" integrity="sha256-fi/AckJAsoxuIUaH5zpKbrbBlrus5Ua53IbpTMoSC1w=" crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="关于node"/>
+<meta name="twitter:description" content="Node 简介 Node.js是一个开源与跨平台的javaScript运行时环境；
+是一个基于Chrome V8 引擎的javaScript运行时环境；node.js允许JavaScript代码运行在服务端
+补充：I/O 接口是指INPUT/OUTPUT 指输入/输出设备接口。即机器上可以连接其他设备的都属于I/O接口
+node环境和浏览器环境的区别 共同点"/>
+
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://achah.github.io/images/profile.jpg" alt="profile picture">
+        <h3 title=""><a href="/">I&#39;m Acha</a></h3>
+        <div class="description">
+          <p>Call me Acha</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+        <li>
+        <a href="https://de.linkedin.com/" rel="me" aria-label="Linkedin">
+          <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://github.com/achaH/achah.github.io" rel="me" aria-label="GitHub">
+          <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+          <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="mailto:mail@alexbilz.com" rel="me" aria-label="e-mail">
+          <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Acha 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    <ul class="nav" id="navMenu">
+        
+        
+        
+        <li><a  href="/"  title="">Home</a></li>
+        
+        
+        <li><a  href="/post/"  title="">Posts</a></li>
+        
+        
+        <li><a  href="/js/"  title="">Js</a></li>
+        
+        
+        <li><a  href="/vue/"  title="">Vue</a></li>
+        
+        
+        <li class="theme-switch-item">
+        <a class="theme-switch" title="Switch Theme">
+            <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+        </li>
+    </ul>
+</div>
+
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>关于node
+        </h3>
+        
+        </div>
+
+    <h1 id="node">Node</h1>
+<h2 id="简介">简介</h2>
+<p>Node.js是一个开源与跨平台的javaScript运行时环境；</p>
+<p>是一个基于Chrome V8 引擎的javaScript运行时环境；node.js允许JavaScript代码运行在服务端</p>
+<p>补充：I/O 接口是指INPUT/OUTPUT 指输入/输出设备接口。即机器上可以连接其他设备的都属于I/O接口</p>
+<h2 id="node环境和浏览器环境的区别">node环境和浏览器环境的区别</h2>
+<p><code>共同点</code></p>
+<p>node.js和浏览器均使用JavaScript作为其编程语言</p>
+<p><code>区别：</code></p>
+<p>js解析器的范围不同</p>
+<p>​	浏览器：ECMAScript    DOM   BOM</p>
+<p>​	node：ECMAScript   fs模块   http模块等</p>
+<h2 id="打开终端窗口">打开终端窗口</h2>
+<blockquote>
+<p>1、从文件夹里面打开</p>
+</blockquote>
+<p>​	1.1 shift + 右键  ==&gt;  powershell</p>
+<p>​	1.2 地址栏：cmd + powershell</p>
+<blockquote>
+<p>2、从vscode里面打开</p>
+</blockquote>
+<p>​	2.1 右键  ==&gt;  在终端中打开</p>
+<p>​	2.2 快捷键  ==&gt;  ` + ctrl</p>
+<blockquote>
+<p>3、面板介绍</p>
+</blockquote>
+<p>​	powershell  =&gt;  clear  =&gt; 清空</p>
+<p>​	cmd  =&gt; cls</p>
+<h2 id="环境变量">环境变量</h2>
+<p>node命令：在任意文件下打开powershell 都可以使用</p>
+<p>挡在powershell想要运行软件/命令工具</p>
+<p>1  首先先在·当前文件夹下·找到软件 或者命令工具  xxx.exe</p>
+<p>2  当前文件夹下找不到 =&gt; 环境变量 =&gt; 查看有没有xxx.exe存在的路径</p>
+<p>如何添加环境变量</p>
+<p>1  找到xxx.exe软件所在的位置</p>
+<p>2   添加到环境变量里面</p>
+<p>​		此电脑 =&gt; 右键属性 =&gt;  高级系统设置 =&gt; 环境变量 =&gt; 系统变量  =&gt; 双击path  =&gt; 新建 =&gt; 连续三个确定  =&gt; 再重新打开powershell</p>
+<h2 id="启动node">启动node</h2>
+<p>方式一：在终端中输入node =&gt; REPL</p>
+<p>​					.exit  或者两次 ctrl+c 退出</p>
+<p>方式二：创建一个js文件，node 文件路径/文件名/  启动（常用）</p>
+<h2 id="nodejs--repl">node.js  REPL</h2>
+<p>REPL 也被称为运行评估打印循环，是一种编程语言环境（主要是控制台窗口），它使用单个表达式作为用户输入，并在执行后将结果返回到控制台</p>
+<p>确切讲，REPL正在等待输入一些JavaScript代码。</p>
+<p>REPL是交互式的，按下tab键REPL会自动尝试补齐所写的内容，以匹配已定义或预定义的变量</p>
+<h2 id="global模块">global模块</h2>
+<p>console 是 node 里面独有的 global 模块里面的对象</p>
+<p>全局模块不需要引入就能使用；其他模块必须引入之后才能使用。</p>
+<p><strong>global模块里面的其他对象</strong></p>
+<p>​	setTimeout 和 setINterval;</p>
+<p>​	__dirname(dir文件夹绝对路径)</p>
+<p><strong>require 引入</strong></p>
+<p>let fs = require(&lsquo;fs&rsquo;);   引入fs模块</p>
+<p>let http = require(&lsquo;http &lsquo;);   引入http 模块</p>
+<hr>
+<blockquote>
+<p>global模块的全局对象：</p>
+</blockquote>
+<p>console,和浏览器调试工具中的console类似</p>
+<p>global，全局命名空间，通过global定义的变量，再任何地方都可以使用，类似于浏览器端定义再全局范围中的变量</p>
+<p>module，对当前模块的一个引用</p>
+<p>exports，exports是对module.exports的一个引用，exports只能再模块中使用；</p>
+<p>process：进程对象</p>
+<blockquote>
+<p>global模块的全局函数</p>
+</blockquote>
+<p>Buffer,用于处理二进制数据</p>
+<p>require(),用于加载模块，require只能再模块中使用</p>
+<p>setTimeout,  clearTimeout,  延时定时器，用法和JavaScript中一样</p>
+<p>setInterval,  clearInterval,   重复定时器，用法和JavaScript中一样</p>
+<blockquote>
+<p>global模块的全局变量</p>
+</blockquote>
+<p>__dirname,  返回当前脚本执行的目录（dir文件夹绝对路径）</p>
+<p>__filename,  返回当前执行代码文件的名称</p>
+<h2 id="fs模块">fs模块</h2>
+<p>fs:  file  systerm   文件系统  操作文件   读取/写入</p>
+<blockquote>
+<p>1、使用此模块：<strong>let fs = require(&lsquo;fs&rsquo;)</strong></p>
+</blockquote>
+<p>所有文件系统操作都具有同步和异步的形式</p>
+<p>异步的形式会把回调函数作为最后一个参数；同步操作可以使用<code>try...catch</code>来处理异常</p>
+<blockquote>
+<p>2、读取文件 （异步）</p>
+</blockquote>
+<ul>
+<li>无编码：解析数据需要将data转换为字符串格式</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFile</span>(<span style="color:#e6db74">&#39;./a.txt&#39;</span>, (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">data</span>) =&gt; {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">err</span>);  <span style="color:#75715e">//null 说明没有错误
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">data</span>);  <span style="color:#75715e">//Buffer 是node的二进制流，可以转化为字符串
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">toString</span>());
+
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) {
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;文件读取失败&#39;</span>);
+        <span style="color:#66d9ef">return</span>
+    } <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">toString</span>());
+    }
+
+    <span style="color:#75715e">// 或者
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) {
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;文件读取失败&#39;</span>);
+    }
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">toString</span>());
+})
+</code></pre></div><ul>
+<li>有编码：在读取文件添加参数2：编码：&lsquo;utf8/utf-8&rsquo;,效果等同于toString()</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// 引入fs
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>);
+
+<span style="color:#75715e">// 2  读取
+</span><span style="color:#75715e">// 参数1：文件路径
+</span><span style="color:#75715e">// 参数2：编码 &#39;utf-8/utf8&#39;  ==&gt; 等同于toString()
+</span><span style="color:#75715e">// 参数3：回调函数
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFile</span>(<span style="color:#e6db74">&#39;./a.txt&#39;</span>, <span style="color:#e6db74">&#39;utf8&#39;</span>, (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">data</span>) =&gt; {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) {
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;读取文件失败&#39;</span>);
+    }
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">data</span>);
+})
+</code></pre></div><ul>
+<li>读取文件的一个错误</li>
+</ul>
+<p><code>ENOENT: no such file or directory</code></p>
+<p>E :  error(错误码都是E开头的)    NO(没有)    ENT(实体)</p>
+<blockquote>
+<p>3、fs写入文件(  fs.writeFile()  )</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// 1 引入fs
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>);
+
+<span style="color:#75715e">// 2 写入&#34; 这是新写入的文件&#34;
+</span><span style="color:#75715e">//  参数1：要写入的文件路径 (要写入到什么地方)
+</span><span style="color:#75715e">//  参数2：数据内容        (要写入的内容)
+</span><span style="color:#75715e">//  参数3：回调函数 (只有一个err的参数)
+</span><span style="color:#75715e">//        err  有值 =&gt; 写入失败  
+</span><span style="color:#75715e">//             没有值 =&gt;  写入成功
+</span><span style="color:#75715e">//  如果文件不存在  将会创建一个新的文件
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">writeFile</span>(<span style="color:#e6db74">&#39;./a.txt&#39;</span>, <span style="color:#e6db74">&#39;这是新写入的文件&#39;</span>, <span style="color:#a6e22e">err</span> =&gt; {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) {
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;写入失败&#39;</span>);
+    }
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;写入成功&#39;</span>);
+    <span style="color:#75715e">// 直接写入会把之前文件里面的数据直接覆盖掉
+</span><span style="color:#75715e"></span>})
+</code></pre></div><blockquote>
+<p>4、fs追加文件(  fs.appendFile()  )</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// 1 引入
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>);
+
+<span style="color:#75715e">// 2、 追加
+</span><span style="color:#75715e">//  参数1：追加到哪里（文件路径）
+</span><span style="color:#75715e">//  参数2：追加什么内容
+</span><span style="color:#75715e">//  参数3：回调函数
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">appendFile</span>(<span style="color:#e6db74">&#39;./a.txt&#39;</span>, <span style="color:#e6db74">&#39;都洗洗睡吧&#39;</span>, <span style="color:#a6e22e">err</span> =&gt; {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">err</span>) {
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;追加失败&#39;</span>)
+    }
+
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;追加成功&#39;</span>)
+})
+
+<span style="color:#75715e">//追加之后重新读取到最新的内容；
+</span><span style="color:#75715e">// 直接打印的data还是文件中原本的内容，追加的内容并没有读取到
+</span></code></pre></div><h2 id="异步和同步">异步和同步</h2>
+<p><code>同步：</code>  程序自上而下运行，会阻塞代码的运行</p>
+<p><code>异步：</code>  程序不用等到上面的程序运行完后再运行下面的操作，不会阻塞代码的执行</p>
+<p><code>前端（浏览器端）：</code></p>
+<p>前端异步的几种情况：</p>
+<pre><code>ajax   xmlhttprequest
+setInterval/setTimeout
+jsonp
+</code></pre><p><code>后端（服务器端node）</code></p>
+<p>同步：sync    异步：async</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFile</span>  <span style="color:#75715e">//异步
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">resdFileSync</span> <span style="color:#75715e">//同步
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">setTimeout</span><span style="color:#f92672">/</span><span style="color:#a6e22e">setInterval</span>  <span style="color:#75715e">//异步
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">for循环</span>    <span style="color:#75715e">//同步
+</span><span style="color:#75715e"></span>......<span style="color:#a6e22e">等等</span>
+</code></pre></div><p><strong>异步：不可以从返回值里拿到结果，异步的执行结果只能通过回调函数获取并处理</strong></p>
+<h2 id="cd的一些命令">cd的一些命令</h2>
+<p>终端命令：</p>
+<ol>
+<li>ls   =&gt;  查看list，查看当前文件夹下所有的目录</li>
+<li>cd  =&gt;  切换到某个文件夹下   ==&gt;  change  directory</li>
+<li>cd  ../   =&gt;  退出到上一级</li>
+</ol>
+<h2 id="path模块">path模块</h2>
+<p>path模块提供了一些工具函数，用于处理文件与目录的路径</p>
+<p>path.join([…paths]):<em>使用平台特定的分隔符作为定界符将所有给定的 path 片段连接在一起，然后规范化生成的路径</em></p>
+<h2 id="__dirname-和--的区别">__dirname 和 ./ 的区别</h2>
+<p>Node.js 中，<code>__dirname</code> 总是指向被执行 js 文件的绝对路径，所以当你在 <code>/d1/d2/myscript.js</code> 文件中写了 <code>__dirname</code>， 它的值就是 <code>/d1/d2</code> 。</p>
+<p>相反，<code>./</code> 会返回你执行 node 命令的路径，例如你的工作路径。</p>
+<h2 id="http模块">http模块</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// http 模块：  开启一个服务器
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// 1 引入
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">http</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;http&#39;</span>);
+<span style="color:#75715e">// 2 创建服务器
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">server</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">createServer</span>()
+<span style="color:#75715e">// 3 开启服务器
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">8001</span>, () =&gt; {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;服务器开启成功了 http://localhost:8001&#39;</span>)
+})
+<span style="color:#75715e">// 4 监听请求
+</span><span style="color:#75715e">// req: request =&gt; 请求对象 =&gt; 前端发送请求过来的数据
+</span><span style="color:#75715e">// res: response =&gt; 响应对象 =&gt; 后台响应给前端
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;request&#39;</span>, (<span style="color:#a6e22e">rep</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;有人请求了&#39;</span>);
+
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">end</span>(<span style="color:#e6db74">&#39;结束&#39;</span>)
+})
+</code></pre></div><h2 id="实现简单的http请求">实现简单的http请求</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// 1 引入
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;fs&#39;</span>)
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">http</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;http&#39;</span>);
+<span style="color:#75715e">// 2 创建服务器
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">server</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">createServer</span>();
+<span style="color:#75715e">// 3 开启服务器
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">8001</span>, () =&gt; {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;开启成功了 http://localhost:8001&#39;</span>);
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;端口号localhost:&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">address</span>().<span style="color:#a6e22e">port</span>)
+})
+<span style="color:#75715e">// 4 监听请求
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">server</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;request&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">writeHead</span>(<span style="color:#ae81ff">200</span>, {
+        <span style="color:#e6db74">&#39;content-type&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;text/html;charset:utf-8&#39;</span>
+    })
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">readFileSync</span>(<span style="color:#e6db74">&#39;./index.html&#39;</span>));
+    <span style="color:#75715e">// 4.1 url路径
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">url</span>);
+    <span style="color:#75715e">// 4.2 method 请求类型 GET/POST
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">method</span>);
+    <span style="color:#75715e">// 4.3 headers 请求头类型 {}
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">headers</span>);
+
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;有人请求了&#39;</span>);
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">end</span>()
+})
+</code></pre></div><h2 id="resend">res.end()</h2>
+<ul>
+<li>结束响应</li>
+<li>res.end()这个方法告诉服务器所有要发送的响应头和响应体都发送完毕。可以人为结束这次响应</li>
+<li>同时每次响应都必须调用该方法，用来结束响应</li>
+<li>参数1：结束响应前要发送的数据，选填</li>
+<li>参数2：编码，选填</li>
+<li>参数3：回调函数，选填</li>
+</ul>
+<h2 id="request请求事件处理函数">request请求事件处理函数</h2>
+<p>request请求事件处理函数，需要接收两个参数</p>
+<ul>
+<li>
+<p>request 请求对象</p>
+<p>请求对象那可以用来获取客户端发送的一些请求信息</p>
+<p><code>res.url  :</code> 请求路径</p>
+<p><code>res.methods :</code>  请求方式</p>
+<p><code>res.headers :</code> 请求头</p>
+</li>
+<li>
+<p>response 响应对象</p>
+<p><code>res.write :</code></p>
+<ul>
+<li>
+<p>参数1：要写入的数据，可以是字符串或二进制，必填</p>
+</li>
+<li>
+<p>参数2：编码，默认是‘utf8’ ,选填</p>
+</li>
+<li>
+<p>参数3：回调函数，选填</p>
+</li>
+<li>
+<p>write 可以使用多次，但是最后一次一定要使用end来结束响应，否则可会断会一直等待</p>
+</li>
+</ul>
+<p><code>res.end()</code>：告诉客户端，响应头和响应体都已经发送完毕，可以呈递给用户了</p>
+<p><code>res.setHeader(name,value)</code>:设置响应报文头</p>
+<p><code>res.statusCode</code>:设置或读取http响应码</p>
+<p><code>res.statusMessage</code>:设置或读取http响应状态信息</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// 1、引入
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">http</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;http&#39;</span>);
+<span style="color:#75715e">// 2、创建服务器
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">http1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">createServer</span>();
+<span style="color:#75715e">// 3、开启服务器
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">http1</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#e6db74">&#39;8001&#39;</span>, () =&gt; {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;成功开启服务器 http://localhost:8001&#39;</span>);
+})
+<span style="color:#75715e">// 4、监听服务器
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">http1</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;request&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; {
+    <span style="color:#75715e">// 4.1、请求路径
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">url</span>);
+    <span style="color:#75715e">// 4.2 请求头
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">headers</span>);
+    <span style="color:#75715e">// 4.3 请求方式
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">methods</span>);
+  
+    <span style="color:#75715e">// 告诉浏览器解析内容 也要按照utf8 出现汉字需要设置
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">setHeader</span>(<span style="color:#e6db74">&#39;content-type&#39;</span>, <span style="color:#e6db74">&#39;text/plain;charset=utf8&#39;</span>)
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;哈哈哈哈哈&#39;</span>);  <span style="color:#75715e">//写入页面中，如果是中文需要设置响应头
+</span><span style="color:#75715e"></span>  
+    <span style="color:#75715e">// 设置或读取http响应码
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">statusCode</span>);  <span style="color:#75715e">//200
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">statusCode</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">202</span>
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;22&#39;</span>, <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">statusCode</span>);  <span style="color:#75715e">//202
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 设置或读取http响应状态信息
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">statusMessage</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;yes&#39;</span>
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">statusMessage</span>);   <span style="color:#75715e">//yes
+</span><span style="color:#75715e"></span>  
+    <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">end</span>()
+})
+</code></pre></div></li>
+</ul>
+<h2 id="nodejs的callback">node.js的callback</h2>
+<h2 id="nodejs中的重定向">node.js中的重定向</h2>
+<blockquote>
+<p>重定向的准则</p>
+</blockquote>
+<ol>
+<li>给客户端发送301响应代码，告诉客户：资源已经移动到另外一个位置</li>
+<li>发送一个位置头(Lacation  Header) 告诉客户重定向到哪里</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">http</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;http&#39;</span>);
+
+<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">createServer</span>(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) {
+  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">writeHead</span>(<span style="color:#ae81ff">301</span>, {
+    <span style="color:#e6db74">&#39;Location&#39;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;http://www.homestarrunner.com/sbsite/&#39;</span>
+  });
+  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">end</span>();
+}).<span style="color:#a6e22e">listen</span>(<span style="color:#ae81ff">3000</span>, <span style="color:#e6db74">&#34;127.0.0.1&#34;</span>);
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Server running at http://127.0.0.1:3000/&#39;</span>);
+</code></pre></div><blockquote>
+<h1 id="通过服务器让客户端重定向">通过服务器让客户端重定向</h1>
+</blockquote>
+<ol>
+<li>状态码设置为 302 临时重定向
+statusCode</li>
+<li>在响应头中通过 Location 告诉客户端往哪儿重定向
+setHeader 响应头内容
+如果客户端发现收到服务器的响应的状态码是 302 就会自动去响应头中找 Location ，然后对该地址发起新的请求
+所以你就能看到客户端自动跳转了</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">statusCode</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">302</span>
+  <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">setHeader</span>(<span style="color:#e6db74">&#39;Location&#39;</span>, <span style="color:#e6db74">&#39;/&#39;</span>)  <span style="color:#75715e">//跳转到首页
+</span></code></pre></div><h2 id="node-模块化">Node 模块化</h2>
+<h3 id="模块化规范分类">模块化规范分类：</h3>
+<ul>
+<li>服务器端(node.js)  (es5)
+<ul>
+<li>commonJS:  require exports</li>
+</ul>
+</li>
+<li>ES6标准模块化规范(vue)
+<ul>
+<li>import   export</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>在node.js中，应用由模块组成，node.js采用commonJS模块规范</p>
+</blockquote>
+<ol>
+<li>一个js文件就是一个模块，每个js文件都独立运行在一个闭包中，不是全局的作用域，模块与模块无法互相访问</li>
+<li>每个模块都是独立的作用域，在这个文件中定义的变量、函数、对象都是私有的，对其他文件不可见</li>
+</ol>
+<blockquote>
+<h3 id="node-模块的三大类">Node 模块的三大类</h3>
+</blockquote>
+<ol>
+<li>内置模块（内置模块是由Node.js 官方提供的，例如fs、 http、 path等）
+<ol>
+<li>直接引入</li>
+<li>直接使用</li>
+</ol>
+</li>
+<li>自定义模块（用户创建的每个js文件，都是自定义模块）
+<ol>
+<li>创建自定义模块</li>
+<li>有引入（相对路径）(require)</li>
+<li>有导出  (exports)</li>
+<li>使用</li>
+</ol>
+</li>
+<li>第三方模块（eg:  npm  i  mime）
+<ol>
+<li>需要安装/下载  ( npm   cnpm   yarn )</li>
+<li>直接引入</li>
+<li>直接使用</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<h3 id="自定义模块">自定义模块</h3>
+</blockquote>
+<p><code>导出</code>：每个js文件里面默认都有一个模块变量 module</p>
+<p>​				每个js文件默认导出的是module里面的exports</p>
+<p><code>引入</code>：通过require引入的模块变量</p>
+<p>​			引入的永远是module.exports的值，可以是任意类型(对象，数组，字符串，数字&hellip;)</p>
+<h2 id="npm的模块化">npm的模块化</h2>
+<blockquote>
+<p>exports 和 module.exports</p>
+</blockquote>
+<ol>
+<li>exports 和 module.exports 指向同一块空间</li>
+<li>exports 是module.exports的一个别名</li>
+<li>导出的永远是module.exports 的值</li>
+<li><code>exports</code>只能使用<code>.</code>语法来向外暴露内部变量 <code>exports.xxx = xxx;</code>
+<code>Module.exports</code>既可以通过.语法，也可以直接赋值一个对象</li>
+<li>module.exports 初始值为一个空对象 {}</li>
+<li>exports 是指向的 module.exports 的引用</li>
+</ol>
+<ul>
+<li>注意： 如果用exports来导出对象的话，就会赋值给一个新的对象，那么和module.exports就没有关系了，因为在node里相当于做了let exports = module.exports;</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//b.js
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
+}
+<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;oo&#39;</span>
+}
+<span style="color:#75715e">//a.js
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./b.js&#39;</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);   <span style="color:#75715e">//{age:20}
+</span></code></pre></div><p>module.exports 和 exports 一起使用</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//b.js
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+<span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;oo&#39;</span>
+<span style="color:#75715e">//a.js
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./b.js&#39;</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);   <span style="color:#75715e">//{ age: 20, name: &#39;oo&#39; }
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">//第二种
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+<span style="color:#a6e22e">exports</span>.<span style="color:#a6e22e">eat</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(){}
+<span style="color:#75715e">//a.js
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./b.js&#39;</span>)
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>);   <span style="color:#75715e">//{ age: 20, eat: [function] }
+</span></code></pre></div><h2 id="express">Express</h2>
+<h3 id="注册路由的三种方式">注册路由的三种方式</h3>
+<ol>
+<li>app.METHOD  ==&gt;  app.get/ post /put 等等之类  ⭐⭐⭐
+<ul>
+<li>类型：完全匹配</li>
+<li>路径：完全匹配(path)    /index  可以匹配到   /index/123 不可以匹配    /index?id=2  可以匹配</li>
+</ul>
+</li>
+<li>app.all  ⭐
+<ul>
+<li>类型：任意类型</li>
+<li>路径：完全匹配(path)</li>
+</ul>
+</li>
+<li>app.use   ⭐⭐⭐
+<ul>
+<li>类型：任意类型</li>
+<li>路径：以path开头的，类似于startsWith();   index/123 可以匹配；   /index/list/123 可以匹配；  /index123  不可以匹配</li>
+<li>如果路径为&rsquo;/',则可以直接省略</li>
+</ul>
+</li>
+</ol>
+<h2 id="express处理静态资源">express处理静态资源</h2>
+<p>使用 Express 中的 <code>express.static</code> 内置中间件函数，通过如下代码就可以将 <code>public</code> 目录下的图片、CSS 文件、JavaScript 文件对外开放访问了：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#e6db74">&#39;public&#39;</span>))
+</code></pre></div><p>如果要使用多个静态资源目录，请多次调用 <code>express.static</code> 中间件函数。</p>
+<p>为express提供服务的文件创建<code>虚拟路径前缀</code>(其中路径在文件系统中并不实际存在)。指定静态目录的挂载路径，如下所示:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/static&#39;</span>, <span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#e6db74">&#39;public&#39;</span>))
+</code></pre></div><p>现在可以通过带有 <code>/static</code> 前缀地址来访问 <code>public</code> 目录中的文件了。</p>
+<p>推荐使用绝对路径来加载静态资源</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#39;/static&#39;</span>, <span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#a6e22e">__dirname</span>,<span style="color:#e6db74">&#39;./public&#39;</span>)))
+</code></pre></div><h2 id="express-下的req-和res">express 下的req 和res</h2>
+<h3 id="req"><strong>req</strong></h3>
+<p>req.query  ==&gt;  获取get请求下url路径的 参数对象</p>
+<p>req.body   ==&gt;  获取post请求下的参数对象</p>
+<ul>
+<li>
+<p>注意：使用 req.body  获取参数对象需要body解析中间件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">urlencoded</span>({ <span style="color:#a6e22e">extended</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span> })) <span style="color:#75715e">//请求是表单格式
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">json</span>()) <span style="color:#75715e">//请求是代码请求 json格式 ajax请求时json格式
+</span></code></pre></div></li>
+</ul>
+<h3 id="res"><strong>res</strong></h3>
+<p>res.send()  ==&gt;  发送数据给前端</p>
+<p>res.sendFile() ==&gt;  发送文件给前端</p>
+<p>res.sendStatus(202)  ==&gt;  状态码</p>
+<p>res.redirect([status,] path) ==&gt;   重定向，如果没有设置status,默认为302</p>
+<p>res.render() ==&gt; 渲染，配合art-template</p>
+<hr>
+<p><code>res.render(view,数据对象，回调函数)</code></p>
+<p>​     参考：http://aui.github.io/art-template/express/</p>
+<p>​		1.安装：npm i art-template     npm  i  express-art-template</p>
+<p>​		2.设置模板引擎</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">engine</span>(<span style="color:#e6db74">&#39;html&#39;</span>,<span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express-art-template&#39;</span>))
+</code></pre></div><p>​		3.省略文件夹 =&gt; 指定files为文件夹</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;views&#39;</span>,<span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#a6e22e">__dirname</span>,<span style="color:#960050;background-color:#1e0010">&#39;</span>.<span style="color:#f92672">/</span><span style="color:#a6e22e">files</span>))
+</code></pre></div><p>​		4.省略文件后缀</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;view engine&#39;</span>,<span style="color:#e6db74">&#39;html&#39;</span>)
+<span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">render</span>(<span style="color:#e6db74">&#39;index&#39;</span>,{<span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;zs&#39;</span>,<span style="color:#a6e22e">age</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20</span>})
+</code></pre></div><h2 id="express-router">Express Router</h2>
+<p>![express Router](/static/images/express Router.png)</p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
+      </div>
+    </div>
+
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+<script type="text/javascript" src="https://achah.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js" integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw=" crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript" src="https://achah.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js" integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://achah.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js" integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro=" crossorigin="anonymous"></script></html></body>
+
+</html>
