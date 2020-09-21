@@ -6,10 +6,19 @@
     <description>Recent content in Vues on Website of Acha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 28 Aug 2020 15:57:13 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 21:22:15 +0800</lastBuildDate>
     
 	<atom:link href="https://achah.github.io/vue/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Query和params传参</title>
+      <link>https://achah.github.io/vue/query%E5%92%8Cparams%E4%BC%A0%E5%8F%82/</link>
+      <pubDate>Mon, 21 Sep 2020 21:22:15 +0800</pubDate>
+      
+      <guid>https://achah.github.io/vue/query%E5%92%8Cparams%E4%BC%A0%E5%8F%82/</guid>
+      <description>vue-router query和params传参(接受参数)的区别  query方式传参和接受参数  //传参 this.$router.push({ path: &amp;#39;/login&amp;#39;, query: { id: this.</description>
+    </item>
     
     <item>
       <title>Vue Cli搭建项目</title>

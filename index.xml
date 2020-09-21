@@ -6,10 +6,19 @@
     <description>Recent content on Website of Acha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 06 Sep 2020 16:47:18 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 21:22:15 +0800</lastBuildDate>
     
 	<atom:link href="https://achah.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Query和params传参</title>
+      <link>https://achah.github.io/vue/query%E5%92%8Cparams%E4%BC%A0%E5%8F%82/</link>
+      <pubDate>Mon, 21 Sep 2020 21:22:15 +0800</pubDate>
+      
+      <guid>https://achah.github.io/vue/query%E5%92%8Cparams%E4%BC%A0%E5%8F%82/</guid>
+      <description>vue-router query和params传参(接受参数)的区别  query方式传参和接受参数  //传参 this.$router.push({ path: &amp;#39;/login&amp;#39;, query: { id: this.</description>
+    </item>
     
     <item>
       <title>Js基础总结</title>
@@ -17,7 +26,8 @@
       <pubDate>Sun, 06 Sep 2020 16:47:18 +0800</pubDate>
       
       <guid>https://achah.github.io/js/js%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/</guid>
-      <description></description>
+      <description>js基础总结 javaScript是什么  javaScript是一种运行在客户端（浏览器）的脚本语言
+ 脚本语言：不需要编译，读取一句 解析一句 一句报错 下一句就不会执行； 执行过程：源代码 - 预解析 - 运行； 编译语句：需要编译，编译一旦出错 整个程序都不会运行 执行过程：源代码-编译后的字节码文件-运行 变量  变量的规则和规范</description>
     </item>
     
     <item>

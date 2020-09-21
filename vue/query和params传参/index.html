@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme=""><head>
-    <title> Acha | Website of Acha </title>
+    <title> Acha | Query和params传参 </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="Call me Acha">
     
@@ -10,14 +10,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://achah.github.io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://achah.github.io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://achah.github.io/favicon-16x16.png">
-    <link rel="canonical" href="https://achah.github.io/">
-    <link rel="alternate" type="application/rss+xml" href="https://achah.github.io/index.xml" title="Website of Acha" />
+    <link rel="canonical" href="https://achah.github.io/vue/query%E5%92%8Cparams%E4%BC%A0%E5%8F%82/">
     
     
     <script type="text/javascript" src="https://achah.github.io/js/anatole-header.min.7e2fc0724240b28c6e214687e73a4a6eb6c196bbace546b9dc86e94cca120b5c.js" integrity="sha256-fi/AckJAsoxuIUaH5zpKbrbBlrus5Ua53IbpTMoSC1w=" crossorigin="anonymous"></script>
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Website of Acha"/>
-<meta name="twitter:description" content="Call me Acha"/>
+<meta name="twitter:title" content="Query和params传参"/>
+<meta name="twitter:description" content="vue-router query和params传参(接受参数)的区别  query方式传参和接受参数  //传参 this.$router.push({ path: &#39;/login&#39;, query: { id: this."/>
 
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
@@ -75,7 +74,7 @@
         
         
         
-        <li><a class="current" href="/"  title="">Home</a></li>
+        <li><a  href="/"  title="">Home</a></li>
         
         
         <li><a  href="/post/"  title="">Posts</a></li>
@@ -97,48 +96,63 @@
 
             <div class="autopagerize_page_element">
                 <div class="content">
-  
-  
-  <div class="post animated fadeInDown">
-    <div class="post-title">
-      <h3><a href="/js/js%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93/">Js基础总结</a>
-      </h3>
-    </div>
-    <div class="post-content"><div class="p_part"><p>js基础总结 javaScript是什么  javaScript是一种运行在客户端（浏览器）的脚本语言
- 脚本语言：不需要编译，读取一句 解析一句 一句报错 下一句就不会执行； 执行过程：源代码 - 预解析 - 运行； 编译语句：需要编译，编译一旦出错 整个程序都不会运行 执行过程：源代码-编译后的字节码文件-运行 变量  变量的规则和规范</p></div>
-  
-  <div class="p_part"><p></p></div></div>
-    <div class="post-footer">
-      <div class="meta">
-        <div class="info"><i class="fa fa-sun-o"></i><span class="date">Sun, Sep 6, 2020</span>
-                 
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>Query和params传参
+        </h3>
+        
         </div>
+
+    <h1 id="vue-router-query和params传参接受参数的区别">vue-router query和params传参(接受参数)的区别</h1>
+<ul>
+<li>query方式传参和接受参数</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//传参
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$router</span>.<span style="color:#a6e22e">push</span>({
+  <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/login&#39;</span>,
+  <span style="color:#a6e22e">query</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">id</span>
+  }
+})
+
+<span style="color:#75715e">//接受参数
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$route</span>.<span style="color:#a6e22e">query</span>.<span style="color:#a6e22e">id</span>
+</code></pre></div><p>==传参是this.$router，是一个路由。==</p>
+<p>==接收参数this.$route，是一个对象。==</p>
+<ul>
+<li>params方式传参和接受参数</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//传参: 
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$router</span>.<span style="color:#a6e22e">push</span>({
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#39;xxx&#39;</span>
+        <span style="color:#a6e22e">params</span><span style="color:#f92672">:</span>{
+          <span style="color:#a6e22e">id</span><span style="color:#f92672">:</span><span style="color:#a6e22e">id</span>
+        }
+      })
+
+<span style="color:#75715e">//接收参数:
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">$route</span>.<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">id</span>
+</code></pre></div><blockquote>
+<p>注意：params传参，push里面只能是name命名的组件名<code>name:'xxx'</code>,不能是<code>path:'xxx'</code>，因为params只能用name来引入路由，如果这里写成了path，接收参数页面会是undefined！！！</p>
+</blockquote>
+<blockquote>
+<p>重点：</p>
+</blockquote>
+<p><strong>直白来讲query相当于get请求，页面跳转时会在地址栏中看到请求的参数，而params相当于post请求，参数不会在地址栏中显示</strong></p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
       </div>
     </div>
-  </div>
-  
-  <div class="post animated fadeInDown">
-    <div class="post-title">
-      <h3><a href="/js/this%E6%8C%87%E5%90%91%E9%97%AE%E9%A2%98/">This指向问题</a>
-      </h3>
-    </div>
-    <div class="post-content"><div class="p_part"><p>this指向问题以及如何改变 指向问题  一般函数中this指向window。 对象中函数的this指向，他的this是调用该函数的实例对象 构造函数里的this，指向创建出来的实例 事件处理函数中，他的this指向触发事件的元素 箭头函数没有自己的this，它的this指向上下文中的this，即所处环境的this  函数名(); ==&gt; 属于函数调用模式，函数内的this指向window new Person(); ==&gt; 构造函数中的this指向了新创建的实例对象 方法调用模式 （对象中的函数称之为方法）==&gt; obj.</p></div>
-  
-  <div class="p_part"><p></p></div></div>
-    <div class="post-footer">
-      <div class="meta">
-        <div class="info"><i class="fa fa-sun-o"></i><span class="date">Fri, Aug 28, 2020</span>
-                 
-        </div>
-      </div>
-    </div>
-  </div>
-  
-<div class="pagination">
-  
 
-
+    
 </div>
+
 
                 </div>
             </div>
