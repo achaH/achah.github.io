@@ -6,10 +6,22 @@
     <description>Recent content in Vues on Website of Acha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 21 Sep 2020 21:22:15 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 21:36:11 +0800</lastBuildDate>
     
 	<atom:link href="https://achah.github.io/vue/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>递归组件</title>
+      <link>https://achah.github.io/vue/%E9%80%92%E5%BD%92%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Mon, 21 Sep 2020 21:36:11 +0800</pubDate>
+      
+      <guid>https://achah.github.io/vue/%E9%80%92%E5%BD%92%E7%BB%84%E4%BB%B6/</guid>
+      <description>递归组件  组件在自己的模板中渲染当前组件本身
+ 创建一个需要引用递归组件的父组件demo.vue
+再创建一个递归组件demo-comment.vue组件
+ 给递归组件的模板中提供一个name属性  export default { // name用于组件的递归调用  name: &amp;#39;Comment&amp;#39;, }  在递归组件的模板中渲染自己  &amp;lt;template&amp;gt; &amp;lt;div class=&amp;#34;comment&amp;#34;&amp;gt; &amp;lt;div&amp;gt;我是评论组件&amp;lt;/div&amp;gt; &amp;lt;!</description>
+    </item>
     
     <item>
       <title>Query和params传参</title>

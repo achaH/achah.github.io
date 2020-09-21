@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-theme=""><head>
+    <title> Acha | 递归组件 </title>
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="description" content="Call me Acha">
+    
+    <link rel="stylesheet" href="https://achah.github.io/css/style.min.5be3a155aa89a24586c761b1b5538c4040e3735ee32ac12a708dc1696c0982f5.css" integrity="sha256-W&#43;OhVaqJokWGx2GxtVOMQEDjc17jKsEqcI3BaWwJgvU=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="https://achah.github.io/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://achah.github.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://achah.github.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://achah.github.io/favicon-16x16.png">
+    <link rel="canonical" href="https://achah.github.io/vue/%E9%80%92%E5%BD%92%E7%BB%84%E4%BB%B6/">
+    
+    
+    <script type="text/javascript" src="https://achah.github.io/js/anatole-header.min.7e2fc0724240b28c6e214687e73a4a6eb6c196bbace546b9dc86e94cca120b5c.js" integrity="sha256-fi/AckJAsoxuIUaH5zpKbrbBlrus5Ua53IbpTMoSC1w=" crossorigin="anonymous"></script>
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="递归组件"/>
+<meta name="twitter:description" content="递归组件  组件在自己的模板中渲染当前组件本身
+ 创建一个需要引用递归组件的父组件demo.vue
+再创建一个递归组件demo-comment.vue组件
+ 给递归组件的模板中提供一个name属性  export default { // name用于组件的递归调用  name: &#39;Comment&#39;, }  在递归组件的模板中渲染自己  &lt;template&gt; &lt;div class=&#34;comment&#34;&gt; &lt;div&gt;我是评论组件&lt;/div&gt; &lt;!"/>
+
+</head><body><div class="sidebar animated fadeInDown">
+    <div class="logo-title">
+      <div class="title">
+        <img src="https://achah.github.io/images/profile.jpg" alt="profile picture">
+        <h3 title=""><a href="/">I&#39;m Acha</a></h3>
+        <div class="description">
+          <p>Call me Acha</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+        
+        <li>
+        <a href="https://de.linkedin.com/" rel="me" aria-label="Linkedin">
+          <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://github.com/achaH/achah.github.io" rel="me" aria-label="GitHub">
+          <i class="fa fa-2x fa-github" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="https://www.instagram.com/" rel="me" aria-label="instagram">
+          <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+        <li>
+        <a href="mailto:mail@alexbilz.com" rel="me" aria-label="e-mail">
+          <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+        </a>          
+        </li>
+
+        
+    </ul>
+    <div class="footer">
+        <div class="by_farbox">&copy; Acha 2020 </div>
+      </div>
+    </div>
+</div><div class="main">
+            <div class="page-top animated fadeInDown">
+    <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    <ul class="nav" id="navMenu">
+        
+        
+        
+        <li><a  href="/"  title="">Home</a></li>
+        
+        
+        <li><a  href="/post/"  title="">Posts</a></li>
+        
+        
+        <li><a  href="/js/"  title="">Js</a></li>
+        
+        
+        <li><a  href="/vue/"  title="">Vue</a></li>
+        
+        
+        <li class="theme-switch-item">
+        <a class="theme-switch" title="Switch Theme">
+            <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        </a>
+        </li>
+    </ul>
+</div>
+
+            <div class="autopagerize_page_element">
+                <div class="content">
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>递归组件
+        </h3>
+        
+        </div>
+
+    <h1 id="递归组件">递归组件</h1>
+<blockquote>
+<p>组件在自己的模板中渲染当前组件本身</p>
+</blockquote>
+<p>创建一个需要引用递归组件的父组件<code>demo.vue</code></p>
+<p>再创建一个递归组件<code>demo-comment.vue</code>组件</p>
+<ul>
+<li>给递归组件的模板中提供一个<code>name</code>属性</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> {
+  <span style="color:#75715e">// name用于组件的递归调用
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Comment&#39;</span>,
+}
+</code></pre></div><ul>
+<li>在递归组件的模板中渲染自己</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">template</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;comment&#34;</span>&gt;
+    &lt;<span style="color:#f92672">div</span>&gt;我是评论组件&lt;/<span style="color:#f92672">div</span>&gt;
+    <span style="color:#75715e">&lt;!-- 在comment组件中再次渲染comment组件 --&gt;</span>
+    &lt;<span style="color:#f92672">Comment</span>&gt;&lt;/<span style="color:#f92672">Comment</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">template</span>&gt;
+</code></pre></div><ul>
+<li>组件递归需要结束条件，不然将会导致“max stack size exceeded”错误成为死递归，确保递归的条件性（使用一个最终会得到 <code>false</code> 的 <code>v-if</code>）</li>
+</ul>
+<p><strong>demo.vue模板</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vue" data-lang="vue">&lt;<span style="color:#f92672">template</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;demo&#34;</span>&gt;
+    <span style="color:#75715e">&lt;!--</span> <span style="color:#a6e22e">demo能够使用comment组件时因为demo注册了comment组件</span> <span style="color:#f92672">--&gt;</span>
+    <span style="color:#75715e">&lt;!--</span> &lt;<span style="color:#f92672">Comment</span> <span style="color:#f92672">:count</span><span style="color:#e6db74">=&#34;count&#34;</span>&gt;&lt;/<span style="color:#f92672">Comment</span>&gt; <span style="color:#f92672">--&gt;</span>
+    <span style="color:#75715e">&lt;!--</span> <span style="color:#a6e22e">demo中总共渲染了六次</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">是因为本来demo中就渲染了一次</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">然后递归组件又渲染了五次</span> <span style="color:#f92672">--&gt;</span>
+    &lt;<span style="color:#f92672">Comment</span> <span style="color:#f92672">:data</span><span style="color:#e6db74">=&#34;obj&#34;</span>&gt;&lt;/<span style="color:#f92672">Comment</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">template</span>&gt;
+
+&lt;<span style="color:#f92672">script</span>&gt;
+<span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Comment</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;./demo-comment.vue&#39;</span>
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> {
+  <span style="color:#75715e">// 在demo页面中引入demo-comment组件
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">components</span><span style="color:#f92672">:</span> {
+    <span style="color:#a6e22e">Comment</span>
+  },
+  <span style="color:#a6e22e">data</span>() {
+    <span style="color:#66d9ef">return</span> {
+      <span style="color:#75715e">// count: 5
+</span><span style="color:#75715e"></span>      <span style="color:#a6e22e">obj</span><span style="color:#f92672">:</span> {
+        <span style="color:#a6e22e">content</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;第四&#39;</span>,
+        <span style="color:#a6e22e">parent</span><span style="color:#f92672">:</span> {
+          <span style="color:#a6e22e">content</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;第三&#39;</span>,
+          <span style="color:#a6e22e">parent</span><span style="color:#f92672">:</span> {
+            <span style="color:#a6e22e">content</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;第二&#39;</span>,
+            <span style="color:#a6e22e">parent</span><span style="color:#f92672">:</span> {
+              <span style="color:#a6e22e">content</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;第一&#39;</span>
+            }
+          }
+        }
+      }
+    }
+  }
+}
+&lt;/<span style="color:#f92672">script</span>&gt;
+
+&lt;<span style="color:#f92672">style</span>&gt;&lt;/<span style="color:#f92672">style</span>&gt;
+
+</code></pre></div><p><strong>递归组件demo-comment.vue模板</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vue" data-lang="vue">&lt;<span style="color:#f92672">template</span>&gt;
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;comment&#34;</span>&gt;
+    &lt;<span style="color:#f92672">Comment</span> <span style="color:#f92672">:data</span><span style="color:#e6db74">=&#34;data.parent&#34;</span> <span style="color:#f92672">v-if</span><span style="color:#e6db74">=&#34;data.parent&#34;</span>&gt;&lt;/<span style="color:#f92672">Comment</span>&gt;
+    &lt;<span style="color:#f92672">div</span>&gt;<span style="color:#a6e22e">我是评论组件</span>&lt;/<span style="color:#f92672">div</span>&gt;
+    <span style="color:#75715e">&lt;!--</span> <span style="color:#a6e22e">在comment组件中再次渲染comment组件</span> <span style="color:#f92672">--&gt;</span>
+    <span style="color:#75715e">&lt;!--</span> &lt;<span style="color:#f92672">Comment</span> <span style="color:#f92672">:</span><span style="color:#a6e22e">count</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;count - 1&#39;</span> <span style="color:#f92672">v-if</span><span style="color:#e6db74">=&#34;count &gt; 0&#34;</span>&gt;&lt;/<span style="color:#f92672">Comment</span>&gt; <span style="color:#960050;background-color:#1e0010">--</span>&gt;
+    &lt;<span style="color:#f92672">p</span>&gt;{{ <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">content</span> }}&lt;/<span style="color:#f92672">p</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">template</span>&gt;
+
+&lt;<span style="color:#f92672">script</span>&gt;
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> {
+  <span style="color:#75715e">// name用于组件的递归调用
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Comment&#39;</span>,
+  <span style="color:#a6e22e">props</span><span style="color:#f92672">:</span> {
+    <span style="color:#75715e">// 接收父组件传递的prop数据，然后进行循环数据
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">count</span><span style="color:#f92672">:</span> Number,
+    <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> Object
+  }
+}
+&lt;/<span style="color:#f92672">script</span>&gt;
+
+&lt;<span style="color:#f92672">style</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;less&#34;</span> <span style="color:#a6e22e">scoped</span>&gt;
+.<span style="color:#a6e22e">comment</span> {
+  <span style="color:#a6e22e">border</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span><span style="color:#a6e22e">px</span> <span style="color:#a6e22e">solid</span> <span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">ccc</span>;
+  <span style="color:#a6e22e">padding</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span><span style="color:#a6e22e">px</span>;
+}
+&lt;/<span style="color:#f92672">style</span>&gt;
+</code></pre></div><p><strong>最终显示效果</strong></p>
+<ul>
+<li>count渲染效果</li>
+</ul>
+<p><!-- raw HTML omitted --></p>
+<ul>
+<li>obj渲染效果</li>
+</ul>
+<p><!-- raw HTML omitted --></p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
+      </div>
+    </div>
+
+    
+</div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+<script type="text/javascript" src="https://achah.github.io/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js" integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw=" crossorigin="anonymous"></script>
+
+
+
+
+<script type="text/javascript" src="https://achah.github.io/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js" integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://achah.github.io/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js" integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro=" crossorigin="anonymous"></script></html></body>
+
+</html>

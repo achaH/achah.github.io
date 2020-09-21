@@ -6,10 +6,22 @@
     <description>Recent content in Js on Website of Acha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 06 Sep 2020 16:47:18 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 21:34:25 +0800</lastBuildDate>
     
 	<atom:link href="https://achah.github.io/js/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>防抖和节流</title>
+      <link>https://achah.github.io/js/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/</link>
+      <pubDate>Mon, 21 Sep 2020 21:34:25 +0800</pubDate>
+      
+      <guid>https://achah.github.io/js/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/</guid>
+      <description>JavaScript 中的节流和防抖  防抖和节流都是在解决高频触发的或后台连续请求的优化逻辑问题
+ 防抖和节流的核心就是定时器。
+ 防抖&amp;gt;你不停止我就不执行，节流&amp;gt;间隔固定时间执行。
+ 防抖和节流 防抖函数的作用就是控制函数在一定的事件内的执行次数。防抖意味着触发高频事件后n秒内函数只会执行一次（最后一次），如果n秒内高频事件再次被触发，则重新计算延迟时间。</description>
+    </item>
     
     <item>
       <title>Js基础总结</title>
